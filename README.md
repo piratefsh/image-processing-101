@@ -30,11 +30,13 @@ pip install -r requirements.txt
 
 ```
 
-# for other systems, change the path to site-packages to where your OpenCV installation lies.
+# for other systems, change the path to site-packages to where your OpenCV installation lies. 
+
+# also change version of opencv to the version of your installation.
 
 cd .venv/lib/python2.7
-ln -s /usr/local/Cellar/opencv/2.4.10/lib/python2.7/site-packages/cv.py cv.py
-ln -s /usr/local/Cellar/opencv/2.4.10/lib/python2.7/site-packages/cv2.so cv2.so
+ln -s /usr/local/Cellar/opencv/2.4.12/lib/python2.7/site-packages/cv.py cv.py
+ln -s /usr/local/Cellar/opencv/2.4.12/lib/python2.7/site-packages/cv2.so cv2.so
 
 ```
 
@@ -46,4 +48,20 @@ To run the iPython notebook, which will open up a browser tab with the .ipynb fi
 ipython notebook
 ```
 
+## Common errors
+
+### ImportError: No module named cv2
+Did you complete step 4 of the installation? Ensure that you are linking to existing cv2.py and cv2.so files. 
+
+### cv2 still not found even after proper linking
+Try restarting the virtual enviroment and iPython.
+
+```
+deactivate
+source .venv/bin/activate
+ipython notebook
+```
+
+## Other errors?
+Submit an issue on Github, and I'll do my best to help you out!
 

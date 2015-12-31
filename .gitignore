@@ -58,5 +58,11 @@ docs/_build/
 # PyBuilder
 target/
 
+# virtualenv installations
 .venv
+
+# weird thing that macos does
 .DS_Store
+
+# ipython checkpoints
+.ipynb_checkpoints/
