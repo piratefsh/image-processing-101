@@ -32,11 +32,9 @@ pip install -r requirements.txt
 
 # for other systems, change the path to site-packages to where your OpenCV installation lies. 
 
-# also change version of opencv to the version of your installation.
-
 cd .venv/lib/python2.7
-ln -s /usr/local/Cellar/opencv/2.4.12/lib/python2.7/site-packages/cv.py cv.py
-ln -s /usr/local/Cellar/opencv/2.4.12/lib/python2.7/site-packages/cv2.so cv2.so
+ln -s `brew --prefix opencv`/lib/python2.7/site-packages/cv.py cv.py
+ln -s `brew --prefix opencv`/lib/python2.7/site-packages/cv2.so cv2.so
 
 ```
 
