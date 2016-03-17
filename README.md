@@ -6,16 +6,20 @@ Code examples on how to do things with OpenCV on [iPython Notebook](http://ipyth
 
 These instructions are for Mac OSX. For installation on other systems, feel free to use your own choice of a virtual environment for Python. OpenCV for Python requires a local installation of OpenCV on your machine, from which we will create symlinks to in your virtual environment.
 
-1. Install [virtualenv](https://virtualenv.readthedocs.org/en/latest/)
-2. Install [OpenCV](http://opencv.org/)
+### step 1
+Install [virtualenv](https://virtualenv.readthedocs.org/en/latest/)
+
+### step 2
+Install [OpenCV](http://opencv.org/)
+
 
 ```
 # install OpenCV and create symlinks
 brew tap homebrew/science
 brew install opencv
 ```
-
-3. Set up virtual environment
+### step 3
+Set up virtual environment
 
 ```
 # create virtual environment
@@ -26,7 +30,8 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-4. Create symlinks to local OpenCV installation
+### step 4
+Create symlinks to local OpenCV installation
 
 ```
 
