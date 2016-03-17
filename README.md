@@ -38,6 +38,12 @@ ln -s `brew --prefix opencv`/lib/python2.7/site-packages/cv2.so cv2.so
 
 ```
 
+### Installation for Anaconda
+
+```
+conda install -c https://conda.anaconda.org/menpo opencv3
+```
+
 ## Development
 
 To run the iPython notebook, which will open up a browser tab with the .ipynb file that you can now work on.
