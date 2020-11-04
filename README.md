@@ -1,5 +1,7 @@
 # Image Processing 101
 
+This is a companion repo to my article on image processing basics: https://codewords.recurse.com/issues/six/image-processing-101
+
 Code examples on how to do things with OpenCV on [iPython Notebook](http://ipython.org/notebook.html).
 
 ## Installation
